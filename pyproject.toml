@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "soso"
+version = "0.1.0"
+description = "Simple HTTP requests helper for Python"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+  {name = "rehanmondal432-prog"}
+]
+keywords = ["http", "requests", "client"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Internet :: WWW/HTTP",
+]
+
+[project.urls]
+Homepage = "https://github.com/rehanmondal432-prog/soso"
+Issues = "https://github.com/rehanmondal432-prog/soso/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["soso*"]
